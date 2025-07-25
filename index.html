@@ -627,6 +627,7 @@
                 // Arrow head
                 const direction = new THREE.Vector3().subVectors(link.target.position, link.source.position).normalize();
                 const arrowGeometry = new THREE.ConeGeometry(2, 6, 8);
+                arrowGeometry.rotateX(Math.PI / 2); // Rotate 90 degrees around the X-axis
                 const arrowMaterial = new THREE.MeshLambertMaterial({ 
                     color: 0x888888,
                     transparent: true,
@@ -635,7 +636,7 @@
                 const arrow = new THREE.Mesh(arrowGeometry, arrowMaterial);
                 
                 const targetPos = link.target.position.clone();
-                targetPos.add(direction.clone().multiplyScalar(-12));
+                targetPos.add(direction.clone().multiplyScalar(-30));
                 arrow.position.copy(targetPos);
                 arrow.lookAt(link.target.position);
 
