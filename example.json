@@ -1,0 +1,263 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "label": "프레임높이",
+      "value": 120,
+      "type": "input",
+      "formula": "",
+      "position": {
+        "x": -8.925173151896473e-15,
+        "y": -80,
+        "z": 4.040533417635012e-15
+      }
+    },
+    {
+      "id": 1,
+      "label": "전고",
+      "value": 50,
+      "type": "input",
+      "formula": "",
+      "position": {
+        "x": 25.764933328317973,
+        "y": -69.33333333333333,
+        "z": -30.480437980387023
+      }
+    },
+    {
+      "id": 2,
+      "label": "전방 프레임 높이 계산",
+      "value": 170,
+      "type": "calculated",
+      "formula": "a + b",
+      "position": {
+        "x": -40.66911432949087,
+        "y": -58.66666666666667,
+        "z": -36.11433734511853
+      }
+    },
+    {
+      "id": 3,
+      "label": "전방 프레임 높이",
+      "value": 170,
+      "type": "target",
+      "formula": "a",
+      "position": {
+        "x": -55.933254232687695,
+        "y": -47.999999999999986,
+        "z": 31.104196998821973
+      }
+    },
+    {
+      "id": 4,
+      "label": "사용자 만족도",
+      "value": 1.7,
+      "type": "target",
+      "formula": "a / 100",
+      "position": {
+        "x": 1.5011270037311968,
+        "y": -37.333333333333336,
+        "z": 70.73873648815685
+      }
+    },
+    {
+      "id": 5,
+      "label": "감자노드",
+      "value": 5,
+      "type": "input",
+      "formula": "",
+      "position": {
+        "x": 64.32021354509774,
+        "y": -26.66666666666667,
+        "z": 39.39288030091115
+      }
+    },
+    {
+      "id": 6,
+      "label": "고양이노드",
+      "value": 15,
+      "type": "input",
+      "formula": "",
+      "position": {
+        "x": 72.16278972497935,
+        "y": -16.000000000000004,
+        "z": -30.60280671945652
+      }
+    },
+    {
+      "id": 7,
+      "label": "감자튀김 요리사",
+      "value": 13.54025100551105,
+      "type": "calculated",
+      "formula": "a*log(b)",
+      "position": {
+        "x": 19.394773242067423,
+        "y": -5.333333333333325,
+        "z": -77.4299575516114
+      }
+    },
+    {
+      "id": 8,
+      "label": "감자튀김의 맛",
+      "value": 0.8837687491630847,
+      "type": "target",
+      "formula": "cos(a * 0.5)",
+      "position": {
+        "x": -49.6020608532711,
+        "y": 5.333333333333334,
+        "z": -62.53951642492887
+      }
+    },
+    {
+      "id": 9,
+      "label": "블루큐라소시럽",
+      "value": 30,
+      "type": "input",
+      "formula": "",
+      "position": {
+        "x": -78.36106879726879,
+        "y": 15.999999999999995,
+        "z": 1.882258470484478
+      }
+    },
+    {
+      "id": 10,
+      "label": "레몬즙",
+      "value": 15,
+      "type": "input",
+      "formula": "",
+      "position": {
+        "x": -42.34902606950611,
+        "y": 26.66666666666666,
+        "z": 62.4135312240317
+      }
+    },
+    {
+      "id": 11,
+      "label": "물",
+      "value": 500,
+      "type": "input",
+      "formula": "",
+      "position": {
+        "x": 27.806426561117053,
+        "y": 37.333333333333314,
+        "z": 65.06170043983963
+      }
+    },
+    {
+      "id": 13,
+      "label": "달달함",
+      "value": 2.7522935779816513,
+      "type": "target",
+      "formula": "a*50/(a+b+c)",
+      "position": {
+        "x": 63.782831794165105,
+        "y": 48.00000000000001,
+        "z": 5.267861835435749
+      }
+    },
+    {
+      "id": 14,
+      "label": "새콤함",
+      "value": 4.128440366972477,
+      "type": "target",
+      "formula": "b*150/(a+b+c)",
+      "position": {
+        "x": 22.155132869473977,
+        "y": 58.66666666666667,
+        "z": -49.67265152735634
+      }
+    },
+    {
+      "id": 15,
+      "label": "종합적인맛",
+      "value": 125.38086019695312,
+      "type": "target",
+      "formula": "-(a^2)-(b^2)+150",
+      "position": {
+        "x": -36.04240419483221,
+        "y": 69.33333333333334,
+        "z": -17.141586529409405
+      }
+    }
+  ],
+  "links": [
+    {
+      "sourceId": 0,
+      "targetId": 2,
+      "weight": 1
+    },
+    {
+      "sourceId": 1,
+      "targetId": 2,
+      "weight": 1
+    },
+    {
+      "sourceId": 2,
+      "targetId": 3,
+      "weight": 1
+    },
+    {
+      "sourceId": 3,
+      "targetId": 4,
+      "weight": 1
+    },
+    {
+      "sourceId": 5,
+      "targetId": 7,
+      "weight": 1
+    },
+    {
+      "sourceId": 6,
+      "targetId": 7,
+      "weight": 1
+    },
+    {
+      "sourceId": 7,
+      "targetId": 8,
+      "weight": 1
+    },
+    {
+      "sourceId": 9,
+      "targetId": 13,
+      "weight": 1
+    },
+    {
+      "sourceId": 10,
+      "targetId": 13,
+      "weight": 1
+    },
+    {
+      "sourceId": 11,
+      "targetId": 13,
+      "weight": 1
+    },
+    {
+      "sourceId": 9,
+      "targetId": 14,
+      "weight": 1
+    },
+    {
+      "sourceId": 10,
+      "targetId": 14,
+      "weight": 1
+    },
+    {
+      "sourceId": 11,
+      "targetId": 14,
+      "weight": 1
+    },
+    {
+      "sourceId": 13,
+      "targetId": 15,
+      "weight": 1
+    },
+    {
+      "sourceId": 14,
+      "targetId": 15,
+      "weight": 1
+    }
+  ],
+  "nodeIdCounter": 16,
+  "timestamp": "2025-07-25T07:58:18.440Z"
+}
